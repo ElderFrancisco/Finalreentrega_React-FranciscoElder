@@ -1,0 +1,50 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+
+    img {
+      flex-shrink: 0;
+      width: 95%;
+      height: 250px;
+      border-radius: 8px 8px 0 0;
+      display: block; // para que la imagen ocupe todo el ancho disponible
+      margin: 0 auto;
+    }
+
+    .cardbody {
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+}

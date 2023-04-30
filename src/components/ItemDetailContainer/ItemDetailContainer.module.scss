@@ -1,0 +1,11 @@
+.containermain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  p {
+    margin: 20%;
+    font-size: 20px;
+  }
+}

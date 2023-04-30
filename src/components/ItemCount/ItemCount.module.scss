@@ -1,0 +1,49 @@
+.containerItemCount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f7d154;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+  div {
+    margin-top: 10px;
+  }
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+}
