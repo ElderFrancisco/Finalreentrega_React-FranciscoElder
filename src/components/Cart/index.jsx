@@ -9,11 +9,11 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <>
+      <div className={styles.container}>
         <Title texto='Carrito' />
         <p>No hay elementos en el carrito</p>
         <Link to='/'>Hacer compras</Link>
-      </>
+      </div>
     );
   } else
     return (
